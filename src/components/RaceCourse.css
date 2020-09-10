@@ -1,0 +1,23 @@
+.container-racecourse{
+    margin-top: 20px;
+}
+
+.container-start-race{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.horses-positions{
+    color: white;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.winner-tag{
+    margin-left: 20px;
+}
+
+.horses-information{
+    color: green;
+    text-align: center;
+}
