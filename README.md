@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Example
 
-Open [https://andresrestrepo.github.io/racehorsesv2/](click here) 
+Open [https://andresrestrepo.github.io/racehorsesv2/](https://andresrestrepo.github.io/racehorsesv2/) 
 
 ## Available Scripts
 
