@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/racehorsesv2/static/css/main.a9e8d8c8.chunk.css",
-    "main.js": "/racehorsesv2/static/js/main.a4d4731a.chunk.js",
-    "main.js.map": "/racehorsesv2/static/js/main.a4d4731a.chunk.js.map",
+    "main.css": "/racehorsesv2/static/css/main.731431c7.chunk.css",
+    "main.js": "/racehorsesv2/static/js/main.2432cec7.chunk.js",
+    "main.js.map": "/racehorsesv2/static/js/main.2432cec7.chunk.js.map",
     "runtime-main.js": "/racehorsesv2/static/js/runtime-main.f259781b.js",
     "runtime-main.js.map": "/racehorsesv2/static/js/runtime-main.f259781b.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/racehorsesv2/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.491fac0e.chunk.js": "/racehorsesv2/static/js/2.491fac0e.chunk.js",
-    "static/js/2.491fac0e.chunk.js.map": "/racehorsesv2/static/js/2.491fac0e.chunk.js.map",
+    "static/js/2.583be471.chunk.js": "/racehorsesv2/static/js/2.583be471.chunk.js",
+    "static/js/2.583be471.chunk.js.map": "/racehorsesv2/static/js/2.583be471.chunk.js.map",
     "index.html": "/racehorsesv2/index.html",
-    "precache-manifest.00b52ddf992a8c111546a011dbb6af67.js": "/racehorsesv2/precache-manifest.00b52ddf992a8c111546a011dbb6af67.js",
+    "precache-manifest.e8a8e5ca69c224f36e04d604245ffd38.js": "/racehorsesv2/precache-manifest.e8a8e5ca69c224f36e04d604245ffd38.js",
     "service-worker.js": "/racehorsesv2/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/racehorsesv2/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.a9e8d8c8.chunk.css.map": "/racehorsesv2/static/css/main.a9e8d8c8.chunk.css.map",
-    "static/js/2.491fac0e.chunk.js.LICENSE.txt": "/racehorsesv2/static/js/2.491fac0e.chunk.js.LICENSE.txt",
+    "static/css/main.731431c7.chunk.css.map": "/racehorsesv2/static/css/main.731431c7.chunk.css.map",
+    "static/js/2.583be471.chunk.js.LICENSE.txt": "/racehorsesv2/static/js/2.583be471.chunk.js.LICENSE.txt",
     "static/media/horse-static.png": "/racehorsesv2/static/media/horse-static.2abb93f3.png",
     "static/media/horse.gif": "/racehorsesv2/static/media/horse.b7461258.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.f259781b.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.491fac0e.chunk.js",
-    "static/css/main.a9e8d8c8.chunk.css",
-    "static/js/main.a4d4731a.chunk.js"
+    "static/js/2.583be471.chunk.js",
+    "static/css/main.731431c7.chunk.css",
+    "static/js/main.2432cec7.chunk.js"
   ]
 }
