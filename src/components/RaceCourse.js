@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { view } from '@risingstack/react-easy-state'
 import GameStore from '../store/GameStore';
 import Horse from './horse/Horse';
 import winnerImg from "../assets/trophy.png";
-
 import './RaceCourse.css';
+import PieInformation from './pie/PieInformation';
+import { Collapse, } from 'reactstrap';
 
 
 const RaceCourse = view(() => {
@@ -12,29 +13,35 @@ const RaceCourse = view(() => {
     const horses = GameStore.horses;
     let horsesByPositions = [...GameStore.horses];
     horsesByPositions.sort((a, b) => {
-        return b.position - a.position;
+        return a.position - b.position;
+    })
+
+    horsesByPositions.map(horse => {
+        horse.value = horse.position;
+        return horse;
     })
 
     const startRace = () => {
         GameStore.startRace();
     }
 
-    const horsesInformation = horsesByPositions.map((horse) =>
-        <div className="row" key={horse.id}>
-            <div className="col" style={{ textAlign: 'right' }} >
-                {horse.name}:
-            </div>
-            <div className="col" style={{ textAlign: 'left' }}>
-                {horse.position}
-            </div>
-        </div>
-    );
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
 
     return (
         <div className="container-racecourse">
             <div className="container-start-race">
                 {!GameStore.raceInProgress
-                    ? <button type="button" className="btn btn-outline-primary" onClick={startRace} >Start Race</button>
+                    ? (
+                        <React.Fragment>
+                            <button id="start-race-btn" type="button" className="btn btn-outline-primary" onClick={startRace} >Start Race</button>
+                            <button className="btn btn-primary" type="button" onClick={toggle}>
+                                Real Time Graph
+                            </button>
+                        </React.Fragment>
+
+                    )
                     : (
                         <React.Fragment>
                             <div className="spinner-border text-primary" role="status">
@@ -45,9 +52,22 @@ const RaceCourse = view(() => {
                     )
                 }
             </div>
-            {horses.map((horse) =>
-                <Horse key={horse.id} horse={horse} />
-            )}
+
+            <Collapse isOpen={isOpen}>
+
+                <div id="pie-information">
+                    <PieInformation data={horsesByPositions} />
+                </div>
+
+            </Collapse>
+
+
+
+            {
+                horses.map((horse) =>
+                    <Horse key={horse.id} horse={horse} />
+                )
+            }
 
             <div className="row horses-positions">
                 <div className="col">
@@ -56,16 +76,11 @@ const RaceCourse = view(() => {
                     </div>
                     <div>Positions: {GameStore.positions.join(" | ")}</div>
                     <div>Time Elapsed: {GameStore.timeElapsed}</div>
-                    <div>Faster Race: {GameStore.fasterRace}</div>
+                    <div>Fastest Race: {GameStore.fasterRace}</div>
 
                 </div>
-                <div className="col">
-                    {GameStore.raceInProgress &&
-                        <React.Fragment> {horsesInformation} </React.Fragment>
-                    }
-                </div>
             </div>
-        </div>
+        </div >
     )
 })
 

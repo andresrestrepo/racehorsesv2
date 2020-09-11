@@ -21,3 +21,14 @@
     color: green;
     text-align: center;
 }
+
+#pie-information{
+    height: 250px;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+#start-race-btn{
+    margin-right: 10px;
+}
