@@ -1,8 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Images
+
+![](docs/screen1.png)
+![](docs/screen2.png)
+
 ## Example
 
 Open [https://andresrestrepo.github.io/racehorsesv2/](https://andresrestrepo.github.io/racehorsesv2/) 
+
 
 ## Available Scripts
 
